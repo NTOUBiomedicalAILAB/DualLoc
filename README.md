@@ -1,1 +1,1 @@
-# DualLoc
+![DualLoc](logo.png)
