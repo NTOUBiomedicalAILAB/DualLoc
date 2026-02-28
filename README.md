@@ -1,1 +1,1 @@
-![DualLoc](logo.png)
+![DualLoc](Logo.png)
