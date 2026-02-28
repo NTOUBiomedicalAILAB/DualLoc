@@ -1,11 +1,9 @@
 ![DualLoc](Logo.png)
 
 
-DualLoc is a multi-label protein subcellular localization predictor using full-parameter fine-tuning of dual Protein Language Models (PLMs). It predicts localization across **10 subcellular compartments** and **9 sorting signal types** simultaneously. The best-performing variant, DualLoc-ProtT5, achieves 0.5872 accuracy and 0.8271 micro-F1, outperforming DeepLoc 2.0 across all key metrics.
+DualLoc is a multi-label protein subcellular localization predictor using full-parameter fine-tuning of dual Protein Language Models (PLMs). It predicts localization across **10 subcellular compartments** and **9 sorting signal types** simultaneously. 
 
 📄 **Paper**: DualLoc: Full-parameter fine-tuning of dual transformer models for protein subcellular localization prediction
-
-If you have any trouble installing or using DualLoc, you can post an issue or directly email us at kchang@ntou.edu.tw. We welcome any suggestions.
 
 ---
 
@@ -116,33 +114,6 @@ MAAKLVFASSGQKFQ...,0,0,1,0,1,0,0,0,0
 
 ---
 
-## Model Performance
-
-### Swiss-Prot Cross-Validation (Subcellular Localization)
-
-| Model | Accuracy | Micro-F1 | Macro-F1 |
-|-------|----------|----------|----------|
-| DeepLoc 2.0 | 0.53 | 0.72 | 0.64 |
-| DualLoc-ProtBERT | 0.4528 | 0.8054 | 0.6762 |
-| DualLoc-ESM-2 | 0.5347 | 0.8063 | 0.7502 |
-| **DualLoc-ProtT5** | **0.5872** | **0.8371** | **0.7811** |
-
-### Independent HPA Validation
-
-| Model | Accuracy | Micro-F1 | Macro-F1 |
-|-------|----------|----------|----------|
-| DeepLoc 2.0 (ProtT5) | 0.39 | 0.60 | 0.46 |
-| **DualLoc-ProtT5** | **0.4098** | **0.6175** | **0.5024** |
-
-### Sorting Signal Classification (DualLoc-ProtT5)
-
-| Metric | Score |
-|--------|-------|
-| Accuracy | 0.8113 |
-| Micro-F1 | 0.8941 |
-| Macro-F1 | 0.8175 |
-
----
 
 ## Project Structure
 
