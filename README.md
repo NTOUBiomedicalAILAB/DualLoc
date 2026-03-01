@@ -138,7 +138,7 @@ The sorting signal dataset was compiled from annotations in DeepLoc 2.0 and Swis
 
 The subcellular localization training data is derived from manually reviewed Swiss-Prot entries (UniProt release 2021-03-23), containing 28,303 unique sequences across 10 compartments. Independent validation uses Human Protein Atlas (HPA) data with 1,717 non-redundant sequences.
 
-> 🔒 The dataset files are not included in this repository. Please refer to [DeepLoc 2.0](https://services.healthtech.dtu.dk/services/DeepLoc-2.0/) and [UniProt](https://www.uniprot.org/) to obtain and format the data according to the Input Data Format section above.
+> 🔒 The dataset files are not included in this repository. Please refer to [DeepLoc 2.0](https://services.healthtech.dtu.dk/services/DeepLoc-2.0/) to obtain and format the data according to the Input Data Format section above.
 
 ---
 
