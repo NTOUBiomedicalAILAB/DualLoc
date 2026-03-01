@@ -156,6 +156,6 @@ Key parameters in `src/config.py`:
 | `THRESHOLD` | 0.5 | Prediction threshold (multi-label) |
 | `num_labels` | 9 | Number of output classes |
 
-> ⚠️ The model download (~3GB for ProtT5-XL) happens automatically on first run via HuggingFace.
+
 
 ---
