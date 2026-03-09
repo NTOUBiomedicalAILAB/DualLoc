@@ -198,7 +198,6 @@ DualLoc/
 │   ├── trainer.py      # Training loop with checkpointing
 │   └── main.py         # Main pipeline entry point
 ├── data/
-│   └── signal_sorting.csv   # Input data (not included, see below)
 └── README.md
 ```
 
