@@ -13,7 +13,7 @@ and peroxisome.
 
 **Human Protein Atlas (HPA)** provides 1,717 non-redundant sequences for independent
 external validation, covering 8 compartments (extracellular and plastid excluded).
-Proteins sharing >30% global sequence identity with the Swiss-Prot training set
+Proteins sharing ≥30% global sequence identity with the Swiss-Prot training set
 were excluded to prevent homology bias.
 
 **Sorting Signal Dataset**, compiled from DeepLoc 2.0 and Swiss-Prot annotations,
@@ -30,14 +30,14 @@ All three datasets were originally curated by [DeepLoc 2.0](https://services.hea
 
 ### Dataset 1 — Swiss-Prot Subcellular Localization (Training / Cross-Validation)
 
-| Property        | Detail                                          |
-|-----------------|-------------------------------------------------|
-| **Source**      | UniProt Swiss-Prot release `2021_03_23`         |
-| **Curation**    | Adopted from DeepLoc 2.0                        |
-| **Sequences**   | 28,303 unique non-redundant sequences           |
-| **Compartments**| 10 (see full list below)                        |
-| **Splits**      | 5-fold cross-validation; 20% held-out as val    |
-| **Filter**      | ≥ 40 aa; excludes bacterial/archaeal sequences  |
+| Property        | Detail                                                                          |
+|-----------------|---------------------------------------------------------------------------------|
+| **Source**      | UniProt Swiss-Prot release `2021_03_23`                                         |
+| **Curation**    | Adopted from DeepLoc 2.0                                                        |
+| **Sequences**   | 28,303 unique non-redundant sequences                                           |
+| **Compartments**| 10 (see full list below)                                                        |
+| **Splits**      |5-fold cross-validation; 20% of training data used as validation set             |
+| **Filter**      | ≥ 40 amino acids; excludes bacterial/archaeal sequences and protein fragments   |
 
 **10 Subcellular Compartments:**
 
@@ -67,7 +67,7 @@ All three datasets were originally curated by [DeepLoc 2.0](https://services.hea
 | **Sequences**   | 1,717 non-redundant sequences                        |
 | **Compartments**| 8 (Extracellular and Plastid **excluded**)           |
 | **Confidence**  | Enhanced or Supported annotations only               |
-| **Filter**      | Proteins with > 30% global sequence identity to      |
+| **Filter**      | Proteins with ≥ 30% global sequence identity to      |
 |                 | Swiss-Prot training set are **excluded** (homology bias prevention) |
 
 > This dataset is used **exclusively** for independent generalization testing.
@@ -77,11 +77,11 @@ All three datasets were originally curated by [DeepLoc 2.0](https://services.hea
 
 ### Dataset 3 — Sorting Signal Dataset (Training / Cross-Validation)
 
-| Property        | Detail                                               |
-|-----------------|------------------------------------------------------|
-| **Source**      | DeepLoc 2.0 + UniProt Swiss-Prot annotations         |
-| **Signal Types**| 9 distinct sorting signal classes                    |
-| **Splits**      | 5-fold cross-validation; 20% held-out as val         |
+| Property        | Detail                                                                                                 |
+|-----------------|--------------------------------------------------------------------------------------------------------|
+| **Source**      | A high-confidence sorting signal dataset was compiled from annotations in DeepLoc 2.0 and Swiss-Prot   |
+| **Signal Types**| 9 distinct sorting signal classes                                                                      |
+| **Splits**      | 5-fold cross-validation; 20% of training data used as validation set                                   |
 
 **9 Sorting Signal Classes:**
 
