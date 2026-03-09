@@ -59,7 +59,7 @@ python src/main.py
 
 This executes the full pipeline:
 1. Load and preprocess `signal_sorting.csv`
-2. Split data (70% train / 30% test)
+2. Split data using 5-fold cross-validation (20% of training data as validation set)
 3. Initialize DualLoc-ProtT5 model
 4. Train for 10 epochs with checkpoint saving
 5. Evaluate and output metrics
@@ -220,12 +220,13 @@ Key parameters in `src/config.py`:
 | Parameter | Default | Description |
 |-----------|---------|-------------|
 | `model_name` | `Rostlab/prot_t5_xl_uniref50` | Pretrained PLM (auto-downloaded from HuggingFace) |
-| `EPOCHS` | 10 | Number of training epochs |
+| `EPOCHS` | 20 | Number of training epochs |
 | `LEARNING_RATE` | 2e-4 | AdamW learning rate |
 | `MAX_LEN` | 512 | Maximum sequence length |
 | `dropout_rate` | 0.3 | Dropout rate |
 | `THRESHOLD` | 0.5 | Prediction threshold (multi-label) |
-| `num_labels` | 9 | Number of output classes |
+|num_labels_loc| 10 | Output classes for subcellular localization |
+|num_labels_signal| 9 | Output classes for sorting signal classification |
 
 
 
